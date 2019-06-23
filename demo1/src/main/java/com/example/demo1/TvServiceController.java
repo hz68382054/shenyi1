@@ -21,7 +21,7 @@ public class TvServiceController {
 	public Map<String,Object> sayHello(HttpServletRequest res,HttpServletResponse resp){
 		System.out.println(res.getHeader("token"));
 		resp.setHeader("token1","000");
-		Cookie cookie = new Cookie("sessionid","222");
+		Cookie cookie = new Cookie("sessionid","2222");
 		resp.addCookie(cookie);
 	 Map<String,Object> result = new HashMap<String,Object>();
 	 result.put("message", "hello world");
